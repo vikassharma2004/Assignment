@@ -9,7 +9,7 @@ Welcome  This backend provides a **secure** and **efficient** API for user authe
 ### 1️⃣ Clone the Repository
 ```sh
 git clone https://github.com/vikassharma2004/Assignment
-cd yourproject
+cd backend
 ```
 
 ### 2️⃣ Install Dependencies
