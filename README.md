@@ -25,6 +25,16 @@ npm run dev
 node App.js
 ```
 
+
+### 4️⃣ Demo user  data  for testing 
+```sh
+   name         email                     password
+testuser1  testuser1@gmail.com            testuser1
+testuser2  testuser2@gmail.com            testuser2
+testuser3  testuser3@gmail.com            testuser3
+
+```
+
 By default, the server runs on `http://localhost:5000`
 
 ---
