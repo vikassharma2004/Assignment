@@ -15,7 +15,7 @@ app.use(cookieParser());
 // note the actual api point is http://loclhost:5000/api/auth/register  for the user
 // note the actual api point is http://loclhost:5000/api/post/all  for the post
 app.use("/api/auth",authroutes);
-app.use("/api/post",postroutes);
+app.use("/api/posts",postroutes);
 
 
 
