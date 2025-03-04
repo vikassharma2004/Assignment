@@ -84,3 +84,14 @@ export const logout = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
+
+export const getprofile=async(req,res)=>{
+  try {
+    const userId=req.user
+    console.log(userId);
+    
+  } catch (error) {
+    res.status(500).json({message:"failed to fetch profile ",success :false})
+  }
+}
