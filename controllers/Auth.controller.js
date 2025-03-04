@@ -85,13 +85,14 @@ export const logout = async (req, res) => {
   }
 };
 
-
-export const getprofile=async(req,res)=>{
+export const getProfile = async (req, res) => {
   try {
-    const userId=req.user
-    console.log(userId);
-    
+  
+    const userId = req.user._id;
+
+    const user = await User.findById(userId);
+    res.json({ user, success: true });
   } catch (error) {
-    res.status(500).json({message:"failed to fetch profile ",success :false})
+    res.status(500).json({ error: error.message });
   }
-}
+};

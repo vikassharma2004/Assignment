@@ -17,3 +17,12 @@ export const postLimiter = rateLimit({
     standardHeaders: 'draft-8',
     legacyHeaders: false,
 });
+export const rateLimiter = rateLimit({
+    windowMs: 30 * 1000, 
+    limit: 3, 
+    message: { error: "Too many attempts. Try again later!" },
+    standardHeaders: 'draft-8',
+    legacyHeaders: false,
+});
+
+

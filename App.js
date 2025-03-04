@@ -3,7 +3,10 @@ import express from "express"
 import { connectdb } from "./lib/Databaseconnection.js";
 import cookieParser from "cookie-parser";
 import authroutes from "./routes/Auth.route.js"
-import postroutes from "./routes/Post.route.js"
+
+import productroutes from "./routes/Product.route.js"
+import cartroutes from "./routes/Cart.route.js"
+import orderroutes from "./routes/Order.route.js"
 
 
 const app=express();
@@ -15,7 +18,10 @@ app.use(cookieParser());
 // note the actual api point is http://loclhost:5000/api/auth/register  for the user
 // note the actual api point is http://loclhost:5000/api/post/all  for the post
 app.use("/api/auth",authroutes);
-app.use("/api/posts",postroutes);
+app.use("/api/cart",cartroutes);
+app.use("/api/orders",orderroutes);
+app.use("/api/products",productroutes);
+
 
 
 
